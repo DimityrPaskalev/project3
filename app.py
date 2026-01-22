@@ -21,3 +21,13 @@ if st.button("Изпрати анкетата"):
         st.write(f"**Име:** {name}")
         st.write(f"**Възраст:** {age}")
         st.write(f"**Оценка:** {rating}/6")
+        def get_class(age):
+    if age < 6:
+        return "предучилищна възраст"
+    elif age > 18:
+        return "след 12 клас"
+    else:
+        return f"{age - 6 + 1} клас"
+student_class = get_class(age)
+st.write(f"**Клас:** {student_class}")
+
