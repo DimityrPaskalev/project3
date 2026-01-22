@@ -10,7 +10,7 @@ age = st.number_input(
 )
 rating = st.selectbox(
     "Дай оценка:",
-    [1, 2, 3, 4, 5, 6]
+    [2, 3, 4, 5, 6]
 )
 if st.button("Изпрати анкетата"):
     if name.strip() == "":
