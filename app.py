@@ -10,7 +10,7 @@ age = st.number_input(
 )
 rating = st.selectbox(
     "Дай оценка:",
-    [1, 2, 3, 4, 5]
+    [1, 2, 3, 4, 5, 6]
 )
 if st.button("Изпрати анкетата"):
     if name.strip() == "":
@@ -20,4 +20,4 @@ if st.button("Изпрати анкетата"):
         st.write("### Резултат:")
         st.write(f"**Име:** {name}")
         st.write(f"**Възраст:** {age}")
-        st.write(f"**Оценка:** {rating}/5")
+        st.write(f"**Оценка:** {rating}/6")
